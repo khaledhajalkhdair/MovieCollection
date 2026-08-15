@@ -1,0 +1,292 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #ece7da;
+  color: #1e1b15;
+  font-family: 'Work Sans', sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header.title .eyebrow,
+.icon figcaption,
+.nav-link,
+.section-head .eyebrow,
+.index-num,
+.index-action,
+.entry .catalog-num,
+.entry .director,
+.entry .rating,
+.entry .poster-empty,
+.entry .notes,
+footer.site-footer {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+header.title h1,
+.index-name,
+.section-heading,
+.entry h3 {
+  font-family: 'Newsreader', serif;
+}
+
+
+header.title {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 48px 24px 28px;
+  border-bottom: 1px solid #b7af9c;
+}
+
+header.title .eyebrow {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #33452f;
+  margin: 0 0 10px;
+}
+
+header.title h1 {
+  font-weight: 500;
+  font-size: 42px;
+  letter-spacing: -1px;
+  margin: 0;
+  color: #1e1b15;
+}
+
+header.title p.tagline {
+  color: #55503f;
+  margin: 10px 0 0;
+  font-size: 15px;
+}
+
+.icon {
+  max-width: 800px;
+  margin: 20px auto 0;
+  padding: 0 24px;
+}
+
+.icon img {
+  height: 54px;
+  display: block;
+}
+
+.icon figcaption {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #8a8471;
+  margin-top: 6px;
+}
+
+.site-nav {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.nav-link {
+  float: left;
+  padding: 13px 18px 11px 0;
+  margin-right: 18px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #55503f;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link.active {
+  color: #33452f;
+  border-bottom-color: #33452f;
+}
+
+
+.section-head {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px 24px 20px;
+  border-bottom: 1px solid #b7af9c;
+}
+
+.section-head .eyebrow {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #7a3b2e;
+  margin: 0 0 6px;
+}
+
+.section-heading {
+  font-weight: 500;
+  font-size: 32px;
+  margin: 0;
+  color: #1e1b15;
+}
+
+
+.index-list {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 8px 24px 48px;
+}
+
+.index-row {
+  display: block;
+  clear: both;
+  padding: 18px 0;
+  border-bottom: 1px dotted #b7af9c;
+  text-decoration: none;
+  color: #1e1b15;
+}
+
+.index-row:hover .index-action {
+  color: #33452f;
+}
+
+.index-num {
+  float: left;
+  width: 38px;
+  font-size: 13px;
+  color: #7a3b2e;
+  padding-top: 6px;
+}
+
+.index-icon {
+  float: left;
+  width: 36px;
+  height: 27px;
+  margin: 6px 13px 0 0;
+}
+
+.index-name {
+  float: left;
+  font-size: 24px;
+}
+
+.index-action {
+  float: right;
+  font-size: 12px;
+  color: #55503f;
+  padding-top: 8px;
+}
+
+@media (max-width: 500px) {
+  .index-name {
+    display: block;
+    float: none;
+    margin: 5px 0 5px 38px;
+  }
+  .index-action {
+    float: none;
+    display: block;
+    margin-left: 38px;
+  }
+}
+
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 24px 64px;
+}
+
+.entry {
+  overflow: hidden;
+  padding: 28px 0;
+  border-bottom: 1px solid #b7af9c;
+}
+
+.entry .catalog-num {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #7a3b2e;
+  margin: 0 0 8px;
+}
+
+.entry .poster {
+  float: left;
+  width: 130px;
+  height: 190px;
+  margin: 0 22px 8px 0;
+  overflow: hidden;
+  background-color: #e2dcc9;
+  border: 1px solid #b7af9c;
+}
+
+.entry .poster img {
+  width: 130px;
+  height: 190px;
+  display: block;
+}
+
+
+.entry h3 {
+  font-weight: 500;
+  font-size: 22px;
+  margin: 0 0 6px;
+}
+
+.entry .director {
+  font-size: 12px;
+  color: #55503f;
+  margin: 0 0 8px;
+}
+
+.entry .rating {
+  color: #33452f;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin: 0 0 8px;
+}
+
+.entry .blurb {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 10px;
+  max-width: 500px;
+}
+
+.entry .notes {
+  font-size: 12px;
+  color: #55503f;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 500px;
+}
+
+@media (max-width: 480px) {
+  .entry .poster {
+    float: none;
+    margin: 0 0 16px;
+  }
+}
+
+
+footer.site-footer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 24px 48px;
+  border-top: 1px solid #b7af9c;
+  font-size: 12px;
+  color: #8a8471;
+}
+
+footer.site-footer p {
+  margin: 3px 0;
+}
